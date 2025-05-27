@@ -4,14 +4,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const mots = [
+const mots: string[] = [
   "Chat", "Pizza", "Dormir", "Pluie", "Laver", "Mariage",
   "Velo", "Téléphone", "Hôpital", "Pigeon", "Vampire", "Fantôme",
   "Fromage", "Anniversaire", "Loup-Garou", "Lune", "Feu", "Engueulade",
   "Balai", "Lanterne", "Crise de nerf", "Mime", "Créature mythique", "Apéro"
 ];
 
-const codes = [
+const codes: string[] = [
   "Que des gestes (type mime)", "Que des bruits de bouche", "3 mots maximum",
   "Que des sons d’animaux", "Que en chantant", "En rimes", "Que des onomatopées",
   "Que avec des emojis dessinés", "En dessinant", "Avec des objets autour de toi",
@@ -20,7 +20,7 @@ const codes = [
   "En langue imaginaire", "En sifflant (si tu peux)"
 ];
 
-const styles = [
+const styles: string[] = [
   "Tu es ivre", "Tu es un robot", "Tu es amoureux", "Tu es pressé par le temps",
   "Tu es super content", "Tu es triste", "Tu es en colère", "Tu es une star",
   "Tu es un vendeur TV", "Tu es très timide", "Tu es au bord de la crise de nerfs",
@@ -28,7 +28,7 @@ const styles = [
   "Tu ne veux pas qu'on te comprenne", "Tu es une crêpe", "Tu es en pleine compétition"
 ];
 
-function randomPick(list) {
+function randomPick(list: string[]): string {
   return list[Math.floor(Math.random() * list.length)];
 }
 
